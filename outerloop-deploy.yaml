@@ -9,6 +9,8 @@ spec:
       app: python-app
   template:
     metadata:
+      annotations:
+        sidecar.istio.io/inject: 'true'
       labels:
         app: python-app
     spec:
